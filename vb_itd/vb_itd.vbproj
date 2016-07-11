@@ -76,10 +76,10 @@
     <Compile Include="CountNumber.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="July11_2.Designer.vb">
-      <DependentUpon>July11_2.vb</DependentUpon>
+    <Compile Include="MultipleCalcurate.Designer.vb">
+      <DependentUpon>MultipleCalcurate.vb</DependentUpon>
     </Compile>
-    <Compile Include="July11_2.vb">
+    <Compile Include="MultipleCalcurate.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RefForm.Designer.vb">
@@ -121,8 +121,8 @@
     <EmbeddedResource Include="CountNumber.resx">
       <DependentUpon>CountNumber.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="July11_2.resx">
-      <DependentUpon>July11_2.vb</DependentUpon>
+    <EmbeddedResource Include="MultipleCalcurate.resx">
+      <DependentUpon>MultipleCalcurate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RefForm.resx">
       <DependentUpon>RefForm.vb</DependentUpon>

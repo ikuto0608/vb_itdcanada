@@ -1,6 +1,6 @@
 ﻿Public Class TopForm
 
-    Private Sub btnJuly11_Click(sender As Object, e As EventArgs) Handles btnJuly11.Click
+    Private Sub btnCount100_Click(sender As Object, e As EventArgs) Handles btnCount100.Click
         My.Forms.CountNumber.Show()
     End Sub
 
@@ -8,15 +8,16 @@
         Close()
     End Sub
 
-    Private Sub btnJuly2_Click(sender As Object, e As EventArgs) Handles btnJuly2.Click
-        My.Forms.July11_2.Show()
+    Private Sub btnMultipleCalcurate_Click(sender As Object, e As EventArgs) Handles btnMultipleCalcurate.Click
+        My.Forms.MultipleCalcurate.Show()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnUseFunction_Click(sender As Object, e As EventArgs) Handles btnUseFunction.Click
         My.Forms.UseFunction.Show()
     End Sub
 
     Private Sub btnRef_Click(sender As Object, e As EventArgs) Handles btnRef.Click
         My.Forms.RefForm.Show()
     End Sub
+
 End Class

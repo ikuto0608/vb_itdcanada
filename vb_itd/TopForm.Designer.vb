@@ -22,23 +22,23 @@ Partial Class TopForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnJuly11 = New System.Windows.Forms.Button()
+        Me.btnCount100 = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
-        Me.btnJuly08 = New System.Windows.Forms.Button()
-        Me.btnJuly2 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnMultipleCalcurate = New System.Windows.Forms.Button()
+        Me.btnUseFunction = New System.Windows.Forms.Button()
         Me.btnRef = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'btnJuly11
+        'btnCount100
         '
-        Me.btnJuly11.Location = New System.Drawing.Point(34, 85)
-        Me.btnJuly11.Name = "btnJuly11"
-        Me.btnJuly11.Size = New System.Drawing.Size(75, 23)
-        Me.btnJuly11.TabIndex = 0
-        Me.btnJuly11.Text = "July11"
-        Me.btnJuly11.UseVisualStyleBackColor = True
+        Me.btnCount100.Location = New System.Drawing.Point(18, 19)
+        Me.btnCount100.Name = "btnCount100"
+        Me.btnCount100.Size = New System.Drawing.Size(87, 23)
+        Me.btnCount100.TabIndex = 0
+        Me.btnCount100.Text = "Count100"
+        Me.btnCount100.UseVisualStyleBackColor = True
         '
         'btnClose
         '
@@ -49,75 +49,63 @@ Partial Class TopForm
         Me.btnClose.Text = "Close"
         Me.btnClose.UseVisualStyleBackColor = True
         '
-        'btnJuly08
+        'btnMultipleCalcurate
         '
-        Me.btnJuly08.Location = New System.Drawing.Point(34, 19)
-        Me.btnJuly08.Name = "btnJuly08"
-        Me.btnJuly08.Size = New System.Drawing.Size(75, 23)
-        Me.btnJuly08.TabIndex = 2
-        Me.btnJuly08.Text = "July08"
-        Me.btnJuly08.UseVisualStyleBackColor = True
+        Me.btnMultipleCalcurate.Location = New System.Drawing.Point(139, 19)
+        Me.btnMultipleCalcurate.Name = "btnMultipleCalcurate"
+        Me.btnMultipleCalcurate.Size = New System.Drawing.Size(103, 23)
+        Me.btnMultipleCalcurate.TabIndex = 3
+        Me.btnMultipleCalcurate.Text = "Multiple Calcurate"
+        Me.btnMultipleCalcurate.UseVisualStyleBackColor = True
         '
-        'btnJuly2
+        'btnUseFunction
         '
-        Me.btnJuly2.Location = New System.Drawing.Point(131, 85)
-        Me.btnJuly2.Name = "btnJuly2"
-        Me.btnJuly2.Size = New System.Drawing.Size(127, 23)
-        Me.btnJuly2.TabIndex = 3
-        Me.btnJuly2.Text = "Multiple Calcurate"
-        Me.btnJuly2.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(34, 66)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(40, 13)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "July 11"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(34, 128)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(93, 23)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Use Function"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnUseFunction.Location = New System.Drawing.Point(18, 62)
+        Me.btnUseFunction.Name = "btnUseFunction"
+        Me.btnUseFunction.Size = New System.Drawing.Size(87, 23)
+        Me.btnUseFunction.TabIndex = 5
+        Me.btnUseFunction.Text = "Use Function"
+        Me.btnUseFunction.UseVisualStyleBackColor = True
         '
         'btnRef
         '
-        Me.btnRef.Location = New System.Drawing.Point(165, 128)
+        Me.btnRef.Location = New System.Drawing.Point(139, 62)
         Me.btnRef.Name = "btnRef"
-        Me.btnRef.Size = New System.Drawing.Size(93, 23)
+        Me.btnRef.Size = New System.Drawing.Size(103, 23)
         Me.btnRef.TabIndex = 6
-        Me.btnRef.Text = "Reference"
+        Me.btnRef.Text = "UseByRef"
         Me.btnRef.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.btnCount100)
+        Me.GroupBox1.Controls.Add(Me.btnRef)
+        Me.GroupBox1.Controls.Add(Me.btnMultipleCalcurate)
+        Me.GroupBox1.Controls.Add(Me.btnUseFunction)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(260, 100)
+        Me.GroupBox1.TabIndex = 7
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "July 11"
         '
         'TopForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Controls.Add(Me.btnRef)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.btnJuly2)
-        Me.Controls.Add(Me.btnJuly08)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnClose)
-        Me.Controls.Add(Me.btnJuly11)
         Me.Name = "TopForm"
         Me.Text = "TopForm"
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents btnJuly11 As System.Windows.Forms.Button
+    Friend WithEvents btnCount100 As System.Windows.Forms.Button
     Friend WithEvents btnClose As System.Windows.Forms.Button
-    Friend WithEvents btnJuly08 As System.Windows.Forms.Button
-    Friend WithEvents btnJuly2 As System.Windows.Forms.Button
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnMultipleCalcurate As System.Windows.Forms.Button
+    Friend WithEvents btnUseFunction As System.Windows.Forms.Button
     Friend WithEvents btnRef As System.Windows.Forms.Button
-
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

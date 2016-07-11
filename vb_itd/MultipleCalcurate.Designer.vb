@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class July11_2
+Partial Class MultipleCalcurate
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -129,7 +129,7 @@ Partial Class July11_2
         Me.lbxAll.Size = New System.Drawing.Size(269, 199)
         Me.lbxAll.TabIndex = 10
         '
-        'July11_2
+        'MultipleCalcurate
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -145,8 +145,8 @@ Partial Class July11_2
         Me.Controls.Add(Me.tbxFirst)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Name = "July11_2"
-        Me.Text = "July11_2"
+        Me.Name = "MultipleCalcurate"
+        Me.Text = "MultipleCalcurate"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

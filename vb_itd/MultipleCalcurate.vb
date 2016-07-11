@@ -1,4 +1,4 @@
-﻿Public Class July11_2
+﻿Public Class MultipleCalcurate
     Const MAX As String = "max"
     Const MIN As String = "min"
 
