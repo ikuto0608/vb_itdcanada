@@ -6,17 +6,15 @@
         Dim firstNumber As Integer = Val(tbxFirst.Text)
         Dim secondNumber As Integer = Val(tbxSecond.Text)
 
-        lbxAll.Items.Add("Multiply List")
-
+        lbxAll.Items.Add("-----Multiply List-----")
         plusNumbersList(firstNumber)
         plusNumbersList(secondNumber)
-
     End Sub
 
     Private Sub plusNumbersList(ByVal number As Integer)
         lbxAll.Items.Add("Number: " & number)
         For index As Integer = 1 To 10
-            lbxAll.Items.Add(index * number)
+            lbxAll.Items.Add(index & " * " & number & " = " & index * number)
         Next
     End Sub
 
@@ -24,7 +22,7 @@
         Dim numMap As New Dictionary(Of String, Integer)
         numMap = setNumbers()
 
-        lbxAll.Items.Add("Reverse List")
+        lbxAll.Items.Add("-----Reverse List-----")
         For index As Integer = numMap.Item(MAX) To numMap.Item(MIN) Step -1
             lbxAll.Items.Add(index)
         Next
@@ -34,8 +32,7 @@
         Dim numMap As New Dictionary(Of String, Integer)
         numMap = setNumbers()
 
-        lbxAll.Items.Add("Square List")
-
+        lbxAll.Items.Add("-----Square List-----")
         For index As Integer = numMap.Item(MIN) To numMap.Item(MAX)
             lbxAll.Items.Add(index * index)
         Next
@@ -45,16 +42,15 @@
         Dim numMap As New Dictionary(Of String, Integer)
         numMap = setNumbers()
 
-        lbxAll.Items.Add("Even and Odd List")
-
-        lbxAll.Items.Add("Even List")
+        lbxAll.Items.Add("-----Even and Odd List-----")
+        lbxAll.Items.Add("-----Even List-----")
         For index As Integer = numMap.Item(MIN) To numMap.Item(MAX)
             If (index Mod 2) = 0 Then
                 lbxAll.Items.Add(index)
             End If
         Next
 
-        lbxAll.Items.Add("Odd List")
+        lbxAll.Items.Add("-----Odd List-----")
         For index As Integer = numMap.Item(MIN) To numMap.Item(MAX)
             If (index Mod 2) <> 0 Then
                 lbxAll.Items.Add(index)
@@ -62,7 +58,7 @@
         Next
     End Sub
 
-    Private Function setNumbers() As Dictionary(Of String, Integer)
+    Function setNumbers() As Dictionary(Of String, Integer)
         Dim numMap As New Dictionary(Of String, Integer)
         Dim firstNumber As Integer = Val(tbxFirst.Text)
         Dim secondNumber As Integer = Val(tbxSecond.Text)

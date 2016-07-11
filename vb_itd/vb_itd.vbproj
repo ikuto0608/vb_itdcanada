@@ -104,6 +104,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="UseFunction.Designer.vb">
+      <DependentUpon>UseFunction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UseFunction.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CountNumber.resx">
@@ -120,6 +126,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UseFunction.resx">
+      <DependentUpon>UseFunction.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
