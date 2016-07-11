@@ -15,4 +15,8 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         My.Forms.UseFunction.Show()
     End Sub
+
+    Private Sub btnRef_Click(sender As Object, e As EventArgs) Handles btnRef.Click
+        My.Forms.RefForm.Show()
+    End Sub
 End Class

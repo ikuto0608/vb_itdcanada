@@ -28,6 +28,7 @@ Partial Class TopForm
         Me.btnJuly2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnRef = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnJuly11
@@ -79,16 +80,26 @@ Partial Class TopForm
         '
         Me.Button1.Location = New System.Drawing.Point(34, 128)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(127, 23)
+        Me.Button1.Size = New System.Drawing.Size(93, 23)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "Use Function"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'btnRef
+        '
+        Me.btnRef.Location = New System.Drawing.Point(165, 128)
+        Me.btnRef.Name = "btnRef"
+        Me.btnRef.Size = New System.Drawing.Size(93, 23)
+        Me.btnRef.TabIndex = 6
+        Me.btnRef.Text = "Reference"
+        Me.btnRef.UseVisualStyleBackColor = True
         '
         'TopForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.btnRef)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnJuly2)
@@ -107,5 +118,6 @@ Partial Class TopForm
     Friend WithEvents btnJuly2 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnRef As System.Windows.Forms.Button
 
 End Class
