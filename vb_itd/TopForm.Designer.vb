@@ -28,7 +28,10 @@ Partial Class TopForm
         Me.btnUseFunction = New System.Windows.Forms.Button()
         Me.btnRef = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Assignment1 = New System.Windows.Forms.GroupBox()
+        Me.btnCalcurator = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
+        Me.Assignment1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnCount100
@@ -89,16 +92,37 @@ Partial Class TopForm
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "July 11"
         '
+        'Assignment1
+        '
+        Me.Assignment1.Controls.Add(Me.btnCalcurator)
+        Me.Assignment1.Location = New System.Drawing.Point(13, 130)
+        Me.Assignment1.Name = "Assignment1"
+        Me.Assignment1.Size = New System.Drawing.Size(259, 40)
+        Me.Assignment1.TabIndex = 8
+        Me.Assignment1.TabStop = False
+        Me.Assignment1.Text = "Assignment1"
+        '
+        'btnCalcurator
+        '
+        Me.btnCalcurator.Location = New System.Drawing.Point(84, 11)
+        Me.btnCalcurator.Name = "btnCalcurator"
+        Me.btnCalcurator.Size = New System.Drawing.Size(75, 23)
+        Me.btnCalcurator.TabIndex = 0
+        Me.btnCalcurator.Text = "Calculator"
+        Me.btnCalcurator.UseVisualStyleBackColor = True
+        '
         'TopForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.Assignment1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnClose)
         Me.Name = "TopForm"
         Me.Text = "TopForm"
         Me.GroupBox1.ResumeLayout(False)
+        Me.Assignment1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -108,4 +132,6 @@ Partial Class TopForm
     Friend WithEvents btnUseFunction As System.Windows.Forms.Button
     Friend WithEvents btnRef As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Assignment1 As GroupBox
+    Friend WithEvents btnCalcurator As Button
 End Class

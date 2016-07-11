@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalcuratorForm.Designer.vb">
+      <DependentUpon>CalcuratorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CalcuratorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CountNumber.Designer.vb">
       <DependentUpon>CountNumber.vb</DependentUpon>
     </Compile>
@@ -118,6 +124,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CalcuratorForm.resx">
+      <DependentUpon>CalcuratorForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CountNumber.resx">
       <DependentUpon>CountNumber.vb</DependentUpon>
     </EmbeddedResource>
