@@ -4,8 +4,8 @@
     Const MULTIPLY As String = "*"
     Const DIVID As String = "/"
     Const EQUAL As String = "="
-    Dim elementsArrayList As List(Of KeyValuePair(Of String, Integer)) =
-        New List(Of KeyValuePair(Of String, Integer))
+    Dim elementsArrayList As List(Of KeyValuePair(Of String, Decimal)) =
+        New List(Of KeyValuePair(Of String, Decimal))
 
     Private Sub btnPlus_Click(sender As Object, e As EventArgs) Handles btnPlus.Click
         pushElement(PLUS, Val(tbxMultipleForm.Text()))
@@ -42,11 +42,11 @@
         clearAll()
     End Sub
 
-    Private Function calculateAll() As Integer
-        Dim result As Integer
+    Private Function calculateAll() As Decimal
+        Dim result As Decimal
         Dim index As Integer = 0
 
-        For Each element As KeyValuePair(Of String, Integer) In elementsArrayList
+        For Each element As KeyValuePair(Of String, Decimal) In elementsArrayList
             If index = 0 Then
                 result += element.Value
                 index += 1
@@ -75,8 +75,8 @@
         Return result
     End Function
 
-    Private Sub pushElement(ByVal symbol As String, ByVal value As Integer)
-        elementsArrayList.Add(New KeyValuePair(Of String, Integer)(
+    Private Sub pushElement(ByVal symbol As String, ByVal value As Decimal)
+        elementsArrayList.Add(New KeyValuePair(Of String, Decimal)(
             symbol,
             value
             ))
@@ -87,7 +87,7 @@
         lblProcesses.Text() = ""
         lblProcesses.Visible = True
 
-        For Each element As KeyValuePair(Of String, Integer) In elementsArrayList
+        For Each element As KeyValuePair(Of String, Decimal) In elementsArrayList
             lblProcesses.Text() += element.Value & element.Key
         Next
     End Sub
