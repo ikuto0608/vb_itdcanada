@@ -23,4 +23,12 @@
     Private Sub btnCalcurator_Click(sender As Object, e As EventArgs) Handles btnCalcurator.Click
         My.Forms.Assignment1Form.Show()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        My.Forms.FindNumbers.Show()
+    End Sub
+
+    Private Sub btnArray_Click(sender As Object, e As EventArgs) Handles btnArray.Click
+        My.Forms.ArrayForm.Show()
+    End Sub
 End Class

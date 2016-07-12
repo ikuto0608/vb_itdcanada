@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayForm.Designer.vb">
+      <DependentUpon>ArrayForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ArrayForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Assignment1Form.Designer.vb">
       <DependentUpon>Assignment1Form.vb</DependentUpon>
     </Compile>
@@ -80,6 +86,12 @@
       <DependentUpon>CountNumber.vb</DependentUpon>
     </Compile>
     <Compile Include="CountNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindNumbers.Designer.vb">
+      <DependentUpon>FindNumbers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindNumbers.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MultipleCalcurate.Designer.vb">
@@ -124,11 +136,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ArrayForm.resx">
+      <DependentUpon>ArrayForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Assignment1Form.resx">
       <DependentUpon>Assignment1Form.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CountNumber.resx">
       <DependentUpon>CountNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindNumbers.resx">
+      <DependentUpon>FindNumbers.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MultipleCalcurate.resx">
       <DependentUpon>MultipleCalcurate.vb</DependentUpon>

@@ -30,8 +30,12 @@ Partial Class TopForm
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Assignment1 = New System.Windows.Forms.GroupBox()
         Me.btnCalcurator = New System.Windows.Forms.Button()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnArray = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.Assignment1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnCount100
@@ -45,7 +49,7 @@ Partial Class TopForm
         '
         'btnClose
         '
-        Me.btnClose.Location = New System.Drawing.Point(183, 206)
+        Me.btnClose.Location = New System.Drawing.Point(197, 305)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(75, 23)
         Me.btnClose.TabIndex = 1
@@ -111,11 +115,41 @@ Partial Class TopForm
         Me.btnCalcurator.Text = "Calculator"
         Me.btnCalcurator.UseVisualStyleBackColor = True
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.btnArray)
+        Me.GroupBox2.Controls.Add(Me.Button1)
+        Me.GroupBox2.Location = New System.Drawing.Point(13, 190)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(259, 63)
+        Me.GroupBox2.TabIndex = 9
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "July 12"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(17, 23)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(87, 23)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "Find numbers"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'btnArray
+        '
+        Me.btnArray.Location = New System.Drawing.Point(138, 23)
+        Me.btnArray.Name = "btnArray"
+        Me.btnArray.Size = New System.Drawing.Size(103, 23)
+        Me.btnArray.TabIndex = 8
+        Me.btnArray.Text = "How to Array"
+        Me.btnArray.UseVisualStyleBackColor = True
+        '
         'TopForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(284, 340)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Assignment1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnClose)
@@ -123,6 +157,7 @@ Partial Class TopForm
         Me.Text = "TopForm"
         Me.GroupBox1.ResumeLayout(False)
         Me.Assignment1.ResumeLayout(False)
+        Me.GroupBox2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -134,4 +169,7 @@ Partial Class TopForm
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Assignment1 As GroupBox
     Friend WithEvents btnCalcurator As Button
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnArray As System.Windows.Forms.Button
 End Class
