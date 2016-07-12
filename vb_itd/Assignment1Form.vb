@@ -1,4 +1,4 @@
-﻿Public Class CalcuratorForm
+﻿Public Class Assignment1Form
     Const PLUS As String = "+"
     Const MINUS As String = "-"
     Const MULTIPLY As String = "*"

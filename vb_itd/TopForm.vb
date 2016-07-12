@@ -21,6 +21,6 @@
     End Sub
 
     Private Sub btnCalcurator_Click(sender As Object, e As EventArgs) Handles btnCalcurator.Click
-        My.Forms.CalcuratorForm.Show()
+        My.Forms.Assignment1Form.Show()
     End Sub
 End Class
