@@ -28,13 +28,15 @@ Partial Class CalcuratorForm
         Me.btnEqual = New System.Windows.Forms.Button()
         Me.btnDivide = New System.Windows.Forms.Button()
         Me.btnMultiply = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.lblProcesses = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'tbxMultipleForm
         '
         Me.tbxMultipleForm.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.tbxMultipleForm.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbxMultipleForm.Location = New System.Drawing.Point(12, 27)
+        Me.tbxMultipleForm.Location = New System.Drawing.Point(12, 19)
         Me.tbxMultipleForm.Name = "tbxMultipleForm"
         Me.tbxMultipleForm.Size = New System.Drawing.Size(260, 31)
         Me.tbxMultipleForm.TabIndex = 0
@@ -106,11 +108,39 @@ Partial Class CalcuratorForm
         Me.btnMultiply.Text = "*"
         Me.btnMultiply.UseVisualStyleBackColor = False
         '
+        'btnClear
+        '
+        Me.btnClear.BackColor = System.Drawing.Color.LightCoral
+        Me.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Location = New System.Drawing.Point(197, 88)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(75, 75)
+        Me.btnClear.TabIndex = 6
+        Me.btnClear.Text = "C"
+        Me.btnClear.UseVisualStyleBackColor = False
+        '
+        'lblProcesses
+        '
+        Me.lblProcesses.Anchor = System.Windows.Forms.AnchorStyles.Right
+        Me.lblProcesses.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.lblProcesses.Location = New System.Drawing.Point(172, 60)
+        Me.lblProcesses.Name = "lblProcesses"
+        Me.lblProcesses.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.lblProcesses.Size = New System.Drawing.Size(100, 23)
+        Me.lblProcesses.TabIndex = 7
+        Me.lblProcesses.Text = "lblProcesses"
+        Me.lblProcesses.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.lblProcesses.Visible = False
+        '
         'CalcuratorForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.lblProcesses)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnDivide)
         Me.Controls.Add(Me.btnMultiply)
         Me.Controls.Add(Me.btnEqual)
@@ -130,4 +160,6 @@ Partial Class CalcuratorForm
     Friend WithEvents btnEqual As Button
     Friend WithEvents btnDivide As Button
     Friend WithEvents btnMultiply As Button
+    Friend WithEvents btnClear As Button
+    Friend WithEvents lblProcesses As Label
 End Class
