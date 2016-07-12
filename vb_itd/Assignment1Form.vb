@@ -4,7 +4,6 @@
     Const MULTIPLY As String = "*"
     Const DIVID As String = "/"
     Const EQUAL As String = "="
-
     Dim elementsArrayList As List(Of KeyValuePair(Of String, Integer)) =
         New List(Of KeyValuePair(Of String, Integer))
 
@@ -29,37 +28,18 @@
     End Sub
 
     Private Sub btnEqual_Click(sender As Object, e As EventArgs) Handles btnEqual.Click
-        Dim result As Integer
         If elementsArrayList.Count = 0 Then
             Exit Sub
         End If
         pushElement(EQUAL, Val(tbxMultipleForm.Text()))
         displayProcesses()
 
-        result = calculateAll()
-        tbxMultipleForm.Text() = result
+        tbxMultipleForm.Text() = calculateAll()
         elementsArrayList.Clear()
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         clearAll()
-    End Sub
-
-    Private Sub pushElement(ByVal symbol As String, ByVal value As Integer)
-        elementsArrayList.Add(New KeyValuePair(Of String, Integer)(
-            symbol,
-            value
-            ))
-    End Sub
-
-    Private Sub displayProcesses()
-        tbxMultipleForm.Clear()
-        lblProcesses.Text() = ""
-        lblProcesses.Visible = True
-
-        For Each element As KeyValuePair(Of String, Integer) In elementsArrayList
-            lblProcesses.Text() += element.Value & element.Key
-        Next
     End Sub
 
     Private Function calculateAll() As Integer
@@ -95,7 +75,24 @@
         Return result
     End Function
 
-    Sub clearAll()
+    Private Sub pushElement(ByVal symbol As String, ByVal value As Integer)
+        elementsArrayList.Add(New KeyValuePair(Of String, Integer)(
+            symbol,
+            value
+            ))
+    End Sub
+
+    Private Sub displayProcesses()
+        tbxMultipleForm.Clear()
+        lblProcesses.Text() = ""
+        lblProcesses.Visible = True
+
+        For Each element As KeyValuePair(Of String, Integer) In elementsArrayList
+            lblProcesses.Text() += element.Value & element.Key
+        Next
+    End Sub
+
+    Private Sub clearAll()
         elementsArrayList.Clear()
         tbxMultipleForm.Clear()
         lblProcesses.Visible = False
