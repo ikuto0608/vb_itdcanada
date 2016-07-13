@@ -48,6 +48,7 @@ Partial Class SortArray
         Me.lbxOne = New System.Windows.Forms.ListBox()
         Me.btnCreate = New System.Windows.Forms.Button()
         Me.btnCalc = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnAddGrade
@@ -285,7 +286,7 @@ Partial Class SortArray
         Me.lbxResult.FormattingEnabled = True
         Me.lbxResult.Location = New System.Drawing.Point(865, 24)
         Me.lbxResult.Name = "lbxResult"
-        Me.lbxResult.Size = New System.Drawing.Size(113, 117)
+        Me.lbxResult.Size = New System.Drawing.Size(113, 91)
         Me.lbxResult.TabIndex = 24
         '
         'lbxTwo
@@ -296,7 +297,7 @@ Partial Class SortArray
         Me.lbxTwo.FormattingEnabled = True
         Me.lbxTwo.Location = New System.Drawing.Point(740, 23)
         Me.lbxTwo.Name = "lbxTwo"
-        Me.lbxTwo.Size = New System.Drawing.Size(113, 117)
+        Me.lbxTwo.Size = New System.Drawing.Size(113, 91)
         Me.lbxTwo.TabIndex = 23
         '
         'lbxOne
@@ -307,7 +308,7 @@ Partial Class SortArray
         Me.lbxOne.FormattingEnabled = True
         Me.lbxOne.Location = New System.Drawing.Point(618, 23)
         Me.lbxOne.Name = "lbxOne"
-        Me.lbxOne.Size = New System.Drawing.Size(113, 117)
+        Me.lbxOne.Size = New System.Drawing.Size(113, 91)
         Me.lbxOne.TabIndex = 22
         '
         'btnCreate
@@ -316,7 +317,7 @@ Partial Class SortArray
         Me.btnCreate.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCreate.ForeColor = System.Drawing.Color.White
-        Me.btnCreate.Location = New System.Drawing.Point(618, 221)
+        Me.btnCreate.Location = New System.Drawing.Point(618, 138)
         Me.btnCreate.Name = "btnCreate"
         Me.btnCreate.Size = New System.Drawing.Size(113, 23)
         Me.btnCreate.TabIndex = 25
@@ -329,12 +330,25 @@ Partial Class SortArray
         Me.btnCalc.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnCalc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCalc.ForeColor = System.Drawing.Color.White
-        Me.btnCalc.Location = New System.Drawing.Point(740, 221)
+        Me.btnCalc.Location = New System.Drawing.Point(740, 138)
         Me.btnCalc.Name = "btnCalc"
         Me.btnCalc.Size = New System.Drawing.Size(113, 23)
         Me.btnCalc.TabIndex = 26
         Me.btnCalc.Text = "Calculate"
         Me.btnCalc.UseVisualStyleBackColor = False
+        '
+        'btnClear
+        '
+        Me.btnClear.BackColor = System.Drawing.Color.Pink
+        Me.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.White
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClear.ForeColor = System.Drawing.Color.White
+        Me.btnClear.Location = New System.Drawing.Point(859, 138)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(113, 23)
+        Me.btnClear.TabIndex = 27
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = False
         '
         'SortArray
         '
@@ -342,6 +356,7 @@ Partial Class SortArray
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.AliceBlue
         Me.ClientSize = New System.Drawing.Size(1010, 261)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnCalc)
         Me.Controls.Add(Me.btnCreate)
         Me.Controls.Add(Me.lbxResult)
@@ -400,4 +415,5 @@ Partial Class SortArray
     Friend WithEvents lbxOne As System.Windows.Forms.ListBox
     Friend WithEvents btnCreate As System.Windows.Forms.Button
     Friend WithEvents btnCalc As System.Windows.Forms.Button
+    Friend WithEvents btnClear As System.Windows.Forms.Button
 End Class
