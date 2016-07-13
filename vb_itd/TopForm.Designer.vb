@@ -31,57 +31,75 @@ Partial Class TopForm
         Me.Assignment1 = New System.Windows.Forms.GroupBox()
         Me.btnCalcurator = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.btnArray = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.btnSort = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.Assignment1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnCount100
         '
+        Me.btnCount100.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnCount100.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.btnCount100.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCount100.Location = New System.Drawing.Point(18, 19)
         Me.btnCount100.Name = "btnCount100"
         Me.btnCount100.Size = New System.Drawing.Size(87, 23)
         Me.btnCount100.TabIndex = 0
         Me.btnCount100.Text = "Count100"
-        Me.btnCount100.UseVisualStyleBackColor = True
+        Me.btnCount100.UseVisualStyleBackColor = False
         '
         'btnClose
         '
-        Me.btnClose.Location = New System.Drawing.Point(197, 305)
+        Me.btnClose.BackColor = System.Drawing.Color.Pink
+        Me.btnClose.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.Location = New System.Drawing.Point(197, 364)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(75, 23)
         Me.btnClose.TabIndex = 1
         Me.btnClose.Text = "Close"
-        Me.btnClose.UseVisualStyleBackColor = True
+        Me.btnClose.UseVisualStyleBackColor = False
         '
         'btnMultipleCalcurate
         '
+        Me.btnMultipleCalcurate.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnMultipleCalcurate.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.btnMultipleCalcurate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMultipleCalcurate.Location = New System.Drawing.Point(139, 19)
         Me.btnMultipleCalcurate.Name = "btnMultipleCalcurate"
         Me.btnMultipleCalcurate.Size = New System.Drawing.Size(103, 23)
         Me.btnMultipleCalcurate.TabIndex = 3
         Me.btnMultipleCalcurate.Text = "Multiple Calcurate"
-        Me.btnMultipleCalcurate.UseVisualStyleBackColor = True
+        Me.btnMultipleCalcurate.UseVisualStyleBackColor = False
         '
         'btnUseFunction
         '
+        Me.btnUseFunction.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnUseFunction.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.btnUseFunction.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUseFunction.Location = New System.Drawing.Point(18, 62)
         Me.btnUseFunction.Name = "btnUseFunction"
         Me.btnUseFunction.Size = New System.Drawing.Size(87, 23)
         Me.btnUseFunction.TabIndex = 5
         Me.btnUseFunction.Text = "Use Function"
-        Me.btnUseFunction.UseVisualStyleBackColor = True
+        Me.btnUseFunction.UseVisualStyleBackColor = False
         '
         'btnRef
         '
+        Me.btnRef.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnRef.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.btnRef.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRef.Location = New System.Drawing.Point(139, 62)
         Me.btnRef.Name = "btnRef"
         Me.btnRef.Size = New System.Drawing.Size(103, 23)
         Me.btnRef.TabIndex = 6
         Me.btnRef.Text = "UseByRef"
-        Me.btnRef.UseVisualStyleBackColor = True
+        Me.btnRef.UseVisualStyleBackColor = False
         '
         'GroupBox1
         '
@@ -108,12 +126,15 @@ Partial Class TopForm
         '
         'btnCalcurator
         '
+        Me.btnCalcurator.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnCalcurator.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.btnCalcurator.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCalcurator.Location = New System.Drawing.Point(84, 11)
         Me.btnCalcurator.Name = "btnCalcurator"
         Me.btnCalcurator.Size = New System.Drawing.Size(75, 23)
         Me.btnCalcurator.TabIndex = 0
         Me.btnCalcurator.Text = "Calculator"
-        Me.btnCalcurator.UseVisualStyleBackColor = True
+        Me.btnCalcurator.UseVisualStyleBackColor = False
         '
         'GroupBox2
         '
@@ -126,29 +147,58 @@ Partial Class TopForm
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "July 12"
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(17, 23)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(87, 23)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "Find numbers"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'btnArray
         '
+        Me.btnArray.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnArray.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.btnArray.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnArray.Location = New System.Drawing.Point(138, 23)
         Me.btnArray.Name = "btnArray"
         Me.btnArray.Size = New System.Drawing.Size(103, 23)
         Me.btnArray.TabIndex = 8
         Me.btnArray.Text = "How to Array"
-        Me.btnArray.UseVisualStyleBackColor = True
+        Me.btnArray.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(17, 23)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(87, 23)
+        Me.Button1.TabIndex = 7
+        Me.Button1.Text = "Find numbers"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.btnSort)
+        Me.GroupBox3.Location = New System.Drawing.Point(13, 270)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(259, 65)
+        Me.GroupBox3.TabIndex = 10
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "July 13"
+        '
+        'btnSort
+        '
+        Me.btnSort.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.btnSort.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.btnSort.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSort.Location = New System.Drawing.Point(17, 19)
+        Me.btnSort.Name = "btnSort"
+        Me.btnSort.Size = New System.Drawing.Size(87, 23)
+        Me.btnSort.TabIndex = 9
+        Me.btnSort.Text = "Sort Array"
+        Me.btnSort.UseVisualStyleBackColor = False
         '
         'TopForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 340)
+        Me.ClientSize = New System.Drawing.Size(284, 399)
+        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Assignment1)
         Me.Controls.Add(Me.GroupBox1)
@@ -158,6 +208,7 @@ Partial Class TopForm
         Me.GroupBox1.ResumeLayout(False)
         Me.Assignment1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox3.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -172,4 +223,6 @@ Partial Class TopForm
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents btnArray As System.Windows.Forms.Button
+    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
+    Friend WithEvents btnSort As System.Windows.Forms.Button
 End Class

@@ -106,6 +106,12 @@
     <Compile Include="RefForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SortArray.Designer.vb">
+      <DependentUpon>SortArray.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SortArray.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TopForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RefForm.resx">
       <DependentUpon>RefForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SortArray.resx">
+      <DependentUpon>SortArray.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TopForm.resx">
       <DependentUpon>TopForm.vb</DependentUpon>

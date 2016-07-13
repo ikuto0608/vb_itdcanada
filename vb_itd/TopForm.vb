@@ -31,4 +31,8 @@
     Private Sub btnArray_Click(sender As Object, e As EventArgs) Handles btnArray.Click
         My.Forms.ArrayForm.Show()
     End Sub
+
+    Private Sub btnSort_Click(sender As Object, e As EventArgs) Handles btnSort.Click
+        My.Forms.SortArray.Show()
+    End Sub
 End Class
