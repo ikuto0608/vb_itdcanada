@@ -82,16 +82,16 @@
     <Compile Include="Assignment1Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Assignment2.Designer.vb">
+      <DependentUpon>Assignment2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Assignment2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CountNumber.Designer.vb">
       <DependentUpon>CountNumber.vb</DependentUpon>
     </Compile>
     <Compile Include="CountNumber.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FindNumbers.Designer.vb">
-      <DependentUpon>FindNumbers.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FindNumbers.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MultipleCalcurate.Designer.vb">
@@ -148,11 +148,11 @@
     <EmbeddedResource Include="Assignment1Form.resx">
       <DependentUpon>Assignment1Form.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Assignment2.resx">
+      <DependentUpon>Assignment2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CountNumber.resx">
       <DependentUpon>CountNumber.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FindNumbers.resx">
-      <DependentUpon>FindNumbers.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MultipleCalcurate.resx">
       <DependentUpon>MultipleCalcurate.vb</DependentUpon>

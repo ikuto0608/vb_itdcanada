@@ -24,15 +24,15 @@
         My.Forms.Assignment1Form.Show()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        My.Forms.FindNumbers.Show()
-    End Sub
-
     Private Sub btnArray_Click(sender As Object, e As EventArgs) Handles btnArray.Click
         My.Forms.ArrayForm.Show()
     End Sub
 
     Private Sub btnSort_Click(sender As Object, e As EventArgs) Handles btnSort.Click
         My.Forms.SortArray.Show()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        My.Forms.Assignment2.Show()
     End Sub
 End Class

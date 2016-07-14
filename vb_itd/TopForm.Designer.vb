@@ -35,10 +35,13 @@ Partial Class TopForm
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.btnSort = New System.Windows.Forms.Button()
+        Me.Assignment2 = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.Assignment1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        Me.Assignment2.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnCount100
@@ -58,7 +61,7 @@ Partial Class TopForm
         Me.btnClose.BackColor = System.Drawing.Color.Pink
         Me.btnClose.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Location = New System.Drawing.Point(197, 364)
+        Me.btnClose.Location = New System.Drawing.Point(197, 436)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(75, 23)
         Me.btnClose.TabIndex = 1
@@ -193,11 +196,34 @@ Partial Class TopForm
         Me.btnSort.Text = "Sort Array"
         Me.btnSort.UseVisualStyleBackColor = False
         '
+        'Assignment2
+        '
+        Me.Assignment2.Controls.Add(Me.Button2)
+        Me.Assignment2.Location = New System.Drawing.Point(12, 350)
+        Me.Assignment2.Name = "Assignment2"
+        Me.Assignment2.Size = New System.Drawing.Size(259, 40)
+        Me.Assignment2.TabIndex = 9
+        Me.Assignment2.TabStop = False
+        Me.Assignment2.Text = "Assignment2"
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Location = New System.Drawing.Point(84, 11)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 0
+        Me.Button2.Text = "Airplane"
+        Me.Button2.UseVisualStyleBackColor = False
+        '
         'TopForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 399)
+        Me.ClientSize = New System.Drawing.Size(284, 471)
+        Me.Controls.Add(Me.Assignment2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Assignment1)
@@ -209,6 +235,7 @@ Partial Class TopForm
         Me.Assignment1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
+        Me.Assignment2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -225,4 +252,6 @@ Partial Class TopForm
     Friend WithEvents btnArray As System.Windows.Forms.Button
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents btnSort As System.Windows.Forms.Button
+    Friend WithEvents Assignment2 As GroupBox
+    Friend WithEvents Button2 As Button
 End Class
