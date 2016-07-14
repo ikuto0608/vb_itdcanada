@@ -25,7 +25,7 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        My.Forms.FindNumbers.Show()
+        My.Forms.FindNumber.Show()
     End Sub
 
     Private Sub btnArray_Click(sender As Object, e As EventArgs) Handles btnArray.Click

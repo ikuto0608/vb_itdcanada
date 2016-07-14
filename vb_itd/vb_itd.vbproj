@@ -88,10 +88,10 @@
     <Compile Include="CountNumber.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FindNumbers.Designer.vb">
-      <DependentUpon>FindNumbers.vb</DependentUpon>
+    <Compile Include="FindNumber.Designer.vb">
+      <DependentUpon>FindNumber.vb</DependentUpon>
     </Compile>
-    <Compile Include="FindNumbers.vb">
+    <Compile Include="FindNumber.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MultipleCalcurate.Designer.vb">
@@ -151,8 +151,8 @@
     <EmbeddedResource Include="CountNumber.resx">
       <DependentUpon>CountNumber.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FindNumbers.resx">
-      <DependentUpon>FindNumbers.vb</DependentUpon>
+    <EmbeddedResource Include="FindNumber.resx">
+      <DependentUpon>FindNumber.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MultipleCalcurate.resx">
       <DependentUpon>MultipleCalcurate.vb</DependentUpon>
