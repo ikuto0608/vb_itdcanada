@@ -25,7 +25,7 @@ Partial Class Assignment2
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Assignment2))
         Me.picPlane = New System.Windows.Forms.PictureBox()
         Me.picWhite = New System.Windows.Forms.PictureBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.dtpReservedAt = New System.Windows.Forms.DateTimePicker()
         Me.lblFirstName = New System.Windows.Forms.Label()
         Me.tbxFirstName = New System.Windows.Forms.TextBox()
         Me.lblLastName = New System.Windows.Forms.Label()
@@ -58,12 +58,12 @@ Partial Class Assignment2
         Me.picWhite.TabIndex = 73
         Me.picWhite.TabStop = False
         '
-        'DateTimePicker1
+        'dtpReservedAt
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(6, 19)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 74
+        Me.dtpReservedAt.Location = New System.Drawing.Point(6, 19)
+        Me.dtpReservedAt.Name = "dtpReservedAt"
+        Me.dtpReservedAt.Size = New System.Drawing.Size(200, 20)
+        Me.dtpReservedAt.TabIndex = 74
         '
         'lblFirstName
         '
@@ -127,7 +127,7 @@ Partial Class Assignment2
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.tbxSeat)
-        Me.GroupBox1.Controls.Add(Me.DateTimePicker1)
+        Me.GroupBox1.Controls.Add(Me.dtpReservedAt)
         Me.GroupBox1.Controls.Add(Me.btnCancel)
         Me.GroupBox1.Controls.Add(Me.tbxFirstName)
         Me.GroupBox1.Controls.Add(Me.btnReserve)
@@ -172,7 +172,7 @@ Partial Class Assignment2
 
     Friend WithEvents picPlane As PictureBox
     Friend WithEvents picWhite As PictureBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents dtpReservedAt As DateTimePicker
     Friend WithEvents lblFirstName As Label
     Friend WithEvents tbxFirstName As TextBox
     Friend WithEvents lblLastName As Label

@@ -1,6 +1,9 @@
 ﻿Public Class Assignment2
     Private SEAT_ALPHABET As Array = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"}
 
+    Dim allBusinessSeatsDictionary As New Dictionary(Of String, Object)
+    Dim allEconomySeatsDictionary As New Dictionary(Of String, Object)
+
     Dim businessSeatsDictionary As New Dictionary(Of String, Array)
     Dim economySeatsDictionary As New Dictionary(Of String, Array)
 
@@ -11,6 +14,9 @@
         initBackground()
         generateStatusOfBusinessSeats()
         generateStatusOfEconomySeats()
+
+        allBusinessSeatsDictionary(dtpReservedAt.Value) = businessSeatsDictionary
+        allEconomySeatsDictionary(dtpReservedAt.Value) = economySeatsDictionary
     End Sub
 
     Private Sub Button_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
@@ -104,6 +110,7 @@
     End Sub
 
     Private Sub generateStatusOfBusinessSeats()
+        businessSeatsDictionary.Clear()
         Dim rand As New Random()
 
         For x As Integer = 0 To 4
@@ -121,6 +128,7 @@
     End Sub
 
     Private Sub generateStatusOfEconomySeats()
+        economySeatsDictionary.Clear()
         Dim rand As New Random()
 
         For x As Integer = 0 To 29
@@ -213,4 +221,39 @@
 
         Return True
     End Function
+
+    Private Sub dtpReservedAt_ValueChanged(sender As Object, e As EventArgs) Handles dtpReservedAt.ValueChanged
+        If allBusinessSeatsDictionary.ContainsKey(dtpReservedAt.Value) Then
+            businessSeatsDictionary = allBusinessSeatsDictionary(dtpReservedAt.Value)
+            economySeatsDictionary = allEconomySeatsDictionary(dtpReservedAt.Value)
+            changeDisplay()
+        Else
+            generateStatusOfBusinessSeats()
+            generateStatusOfEconomySeats()
+            allBusinessSeatsDictionary(dtpReservedAt.Value) = businessSeatsDictionary
+            allEconomySeatsDictionary(dtpReservedAt.Value) = economySeatsDictionary
+        End If
+    End Sub
+
+    Private Sub changeDisplay()
+        For x As Integer = 0 To 4
+            For y As Integer = 0 To 3
+                If isEpmtySeat(businessSeatsDictionary(SEAT_ALPHABET(y) & (x + 1))) Then
+                    setReserveSeat(SEAT_ALPHABET(y) & (x + 1))
+                Else
+                    setEmptySeat(SEAT_ALPHABET(y) & (x + 1))
+                End If
+            Next
+        Next
+
+        For x As Integer = 0 To 29
+            For y As Integer = 0 To 9
+                If isEpmtySeat(economySeatsDictionary(SEAT_ALPHABET(y) & (x + 1 + 5))) Then
+                    setReserveSeat(SEAT_ALPHABET(y) & (x + 1 + 5))
+                Else
+                    setEmptySeat(SEAT_ALPHABET(y) & (x + 1 + 5))
+                End If
+            Next
+        Next
+    End Sub
 End Class
