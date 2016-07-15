@@ -135,9 +135,9 @@
             MsgBox("You canceled Economy seat: " & seatNumber)
         End If
 
-        tbxFirstName = ""
-        tbxLastName = ""
-        tbxSeat = ""
+        tbxFirstName.Text = ""
+        tbxLastName.Text = ""
+        tbxSeat.Text = ""
     End Sub
 
     Private Sub dtpReservedAt_ValueChanged(sender As Object, e As EventArgs) Handles dtpReservedAt.ValueChanged
